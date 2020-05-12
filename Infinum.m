@@ -1,4 +1,4 @@
-function res = infinum(p)
+function retval = infinum(p)
   a = 0;
   bool = false;
   bool2 = false;
@@ -16,7 +16,7 @@ function res = infinum(p)
           endif
     endfor
     if (bool == true)
-      res = -a;
+      retval = -a;
     endif
    endwhile 
 endfunction
