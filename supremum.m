@@ -1,4 +1,4 @@
-function res = supremum(p)
+function retval = supremum(p)
   a = 0;
   bool = false;
   bool2 = false;
@@ -13,7 +13,7 @@ function res = supremum(p)
           endif
     endfor
     if (bool == true)
-      res = a;
+      retval = a;
     endif
   endwhile
 endfunction
