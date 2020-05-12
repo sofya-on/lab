@@ -1,11 +1,11 @@
-function [res, i] = Dih(p)
+function [res, i] = dih(p)
   a = Inf(p);
   b = Sup(p);
   c = (a + b) / 2;
   i =0;
-  while (abs(Value(p, c)) > 0.001)
+  while (abs(gorner_div(p, c)) > 0.001)
     ++i;
-    if ((Value(p, a) >= 0 & Value(p, c) <= 0) || (Value(p, a) <= 0 & Value(p, c) >= 0))
+    if ((gorner_div(p, a) >= 0 & gorner_div(p, c) <= 0) || (gorner_div(p, a) <= 0 & gorner_div(p, c) >= 0))
       b = c;
     else
       a = c;
