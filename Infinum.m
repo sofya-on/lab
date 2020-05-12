@@ -1,4 +1,4 @@
-function res = Inf(p)
+function res = infinum(p)
   a = 0;
   bool = false;
   bool2 = false;
