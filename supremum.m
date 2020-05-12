@@ -1,4 +1,4 @@
-function res = Sup(p)
+function res = supremum(p)
   a = 0;
   bool = false;
   bool2 = false;
